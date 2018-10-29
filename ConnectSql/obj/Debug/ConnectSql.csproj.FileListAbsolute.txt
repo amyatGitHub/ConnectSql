@@ -1,0 +1,6 @@
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\obj\Debug\ConnectSql.csprojResolveAssemblyReference.cache
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\bin\Debug\ConnectSql.dll
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\bin\Debug\ConnectSql.pdb
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\bin\Debug\Logger.dll
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\obj\Debug\ConnectSql.dll
+e:\amyau.itbd\documents\visual studio 2015\Projects\ConnectSql\ConnectSql\obj\Debug\ConnectSql.pdb
