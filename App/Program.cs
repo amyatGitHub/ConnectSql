@@ -17,7 +17,7 @@ namespace App
         static void WriteData()
         {
             Person[] inputDataList = new Person[] { };
-            string[] columns = new string[] { "Name", "Age" };
+            string[] columns = new string[] { nameof(Person.Name), nameof(Person.Age) };
             string dbName = "dbName";
             string tableName = "tableName";
 
