@@ -57,13 +57,14 @@ namespace ConnectSql
             }
         }
 
-        public void InsertDB(object[] dataList, string[] tableCols, string tableName, bool autoTrun = true)
+        public long InsertDB(object[] dataList, string[] tableCols, string tableName, bool autoTrun = true)
         {
             Dictionary<string, int> colInfo = new Dictionary<string, int> { };
             int eachRound;
             bool proceed = false;
             logMsg = new List<string> { };
             List<int> overlongRow = new List<int> { };
+            long id = 0;
 
             eachRound = Convert.ToInt32(2099 / (tableCols.Length));
             if ((eachRound - (2099 / tableCols.Length)) > 0)
@@ -174,6 +175,8 @@ namespace ConnectSql
                         sSQL = sSQL.Substring(0, sSQL.Length - 1);
                         objCmd.CommandText = sSQL;
                         objCmd.ExecuteNonQuery();
+                        if(i == 0)
+                            id = objCmd.LastInsertedId;
                     }
                 }
                 catch (Exception e)
@@ -187,6 +190,7 @@ namespace ConnectSql
                     Logger.Logger.WriteLog(e);
                 }
             }
+            return id;
         }
     }
 }
