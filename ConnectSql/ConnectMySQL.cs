@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Reflection;
 
-namespace ConnectMySQL
+namespace ConnectSql
 {
     public class ConnectMySQL
     {
